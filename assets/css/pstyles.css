@@ -1,0 +1,200 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 1.6rem;
+}
+
+input[type=password],
+input[type=number],
+input[type=text] {
+    border: .2rem solid rgba(0, 0, 0, .45);
+    outline: none;
+    background: none;
+    height: 3.5rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative;
+    margin: 0;
+}
+
+p {
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+label {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.vln {
+    height: 100%;
+    border-right: .1rem solid #000;
+}
+
+.c {
+    height: 100vh;
+    max-width: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Header */
+.h {
+    height: 8rem;
+    border-bottom: .1rem solid #000;
+    background-color: #fff;
+}
+
+.h-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-c {
+    padding: 0 1.5rem 0 1rem;
+}
+
+.logo-c img {
+    max-width: 10rem;
+}
+
+.txt-c {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 2rem;
+}
+
+/* Login Container */
+.l-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.f-c {
+    background: #fff;
+    box-shadow: #000000 0px 2px 6px 0px;
+    height: 48rem;
+    width: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.f {
+    max-width: 90%;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.f-t {
+    padding: 2rem 0;
+}
+
+.p-meth {
+    display: flex;
+    gap: .5rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.f .c-n,
+.f .ch-n,
+.f .exp,
+.f .c-s{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.f .c-s {
+    width: 15%;
+}
+
+.a-p .date {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.f div>label {
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.s {
+    display: flex;
+    justify-content: end;
+    padding: .5rem 0 .5rem 0;
+}
+
+.b {
+    color: white;
+    cursor: pointer;
+    border: 0;
+    background-color: #0067b8;
+    padding: 8px 20px;
+    font-size: 11pt;
+}
+
+.s-c {
+    text-align: center;
+}
+
+.s-c h1 {
+    font-size: 3.5rem;
+}
+
+.s-c p {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 40rem) {
+    body {
+        background: none;
+    }
+
+    .h {
+        height: 11rem;
+    }
+
+    .l-c {
+        width: 100%;
+        height: 100%;
+    }
+
+    .f-c {
+        height: 100%;
+        width: 100%;
+    }
+}
